@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
     <script defer src="main.js"></script>
     <title>Habits</title>
 </head>
@@ -20,28 +21,22 @@
    <header>
        <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits">
        <button>
-        <img src="./assets/plus.png" alt="Sinal de mais roxo">
-        Registrar o meu dia</button>
+            <img src="./assets/plus.png" alt="Sinal de mais roxo">
+            <div>Registrar o meu dia</div>
+        </button>
    </header>
-   <form action="habits">
+   <form id="form-habits">
+    <div class="habits">
        <div class="habits">
-           <div class="habit" name="run">🏃‍♂️</div>
-           <div class="habit" name="water">💧</div>
-           <div class="habit" name="food">🍎</div>
+           <div class="habit" data-name="run">🏃‍♂️</div>
+           <div class="habit" data-name="water">💧</div>
+           <div class="habit" data-name="food">🍎</div>
+           <div class="habit" data-name="journal">📕</div>
+           <div class="habit" data-name="takePills">💊</div>
+        </div>
        </div>
        <div class="days">
-        <div class="day">
-            <div>03/01</div>
-            <input type="checkbox" name="run">
-            <input type="checkbox" name="water">
-            <input type="checkbox">
-        </div>
-        <div class="day">
-            <div>04/01</div>
-            <input type="checkbox" name="run">
-            <input type="checkbox" name="water">
-            <input type="checkbox">
-        </div>
+        
        </div>
    </form>
     
